@@ -27,7 +27,7 @@ services:
      context: app
      target: builder
     ports: 
-      - '8000:8000'
+      - '80:80'
 ```
 
 ## Deploy with docker compose
@@ -49,12 +49,12 @@ Listing containers must show one container running and the port mapping as below
 ```
 $ docker compose ps
 NAME                COMMAND             SERVICE             STATUS              PORTS
-flask-web-1         "python3 app.py"    web                 running             0.0.0.0:8000->8000/tcp
+flask-web-1         "python3 app.py"    web                 running             0.0.0.0:80->80/tcp
 ```
 
-After the application starts, navigate to `http://localhost:8000` in your web browser or run:
+After the application starts, navigate to `http://localhost:80` in your web browser or run:
 ```
-$ curl localhost:8000
+$ curl localhost:80
 Hello World!
 ```
 
