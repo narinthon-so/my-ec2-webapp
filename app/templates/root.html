@@ -12,27 +12,25 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=_turnstileCb" async defer></script>
     <style>
-        body {
+        .center-screen {
             display: flex;
+            justify-content: center;
             align-items: center;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #fefefe;
+            height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <main class="container">
-        >
+    <div class="container center-screen">
 
-        <div class="checkbox mb-3">
-            <!-- The Turnstile widget will be injected in the following div. -->
-            <div id="myWidget"></div>
-            <!-- end. -->
-        </div>
+        <!-- <div class="checkbox mb-3"> -->
+        <!-- The Turnstile widget will be injected in the following div. -->
+        <div id="myWidget"></div>
+        <!-- end. -->
+        <!-- </div> -->
 
-    </main>
+    </div>
 
     <script>
         // This function is called when the Turnstile script is loaded and ready to be used.
