@@ -63,13 +63,11 @@
                 theme: 'light',
                 callback: function (token) {
                     // console.log(`Challenge Success ${token}`);
-                    document.addEventListener("DOMContentLoaded", function () {
-                        var modal = document.getElementById("exampleModal");
-                        modal.style.display = "block";
-                        setTimeout(function () {
-                            modal.style.display = "none";
-                        }, 5000); // 5 seconds
-                    });
+                    var modal = document.getElementById("exampleModal");
+                    modal.style.display = "block";
+                    setTimeout(function () {
+                        modal.style.display = "none";
+                    }, 5000); // 5 seconds
                 },
             });
         }
