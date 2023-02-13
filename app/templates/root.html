@@ -41,8 +41,10 @@
                 sitekey: '0x4AAAAAAACca-OhulOdItoN',
                 theme: 'light',
                 callback: function (token) {
+                    alert("_turnstileCb called");
                     setTimeout(function () {
-                        alert("_turnstileCb called");
+                        window.close();
+                        window.location.replace("/home")
                     }, 5000);
                 },
             });
