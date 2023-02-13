@@ -62,6 +62,7 @@
                 sitekey: '0x4AAAAAAACca-OhulOdItoN',
                 theme: 'light',
                 callback: function (token) {
+                    alert("_turnstileCb called");
                     // console.log(`Challenge Success ${token}`);
                     var modal = document.getElementById("exampleModal");
                     modal.style.display = "block";
